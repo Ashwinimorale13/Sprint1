@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-4.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: .8125rem;
+            font-weight: 400;
+            line-height: 1.5385;
+            color: #333;
+            text-align: left;
+            background-color: #6abadeba;
+        }
+
+ h2 {
+	color: #000;
+	font-size: 26px;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	margin: 30px 0 60px;
+    font-weight:400;
+}
+ .mt-50 {
+
+   margin-top: 50px;
+ }
+  .mb-50 {
+     margin-bottom: 50px;
+}
+.card {
+            position: relative;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0, 0, 0, .125);
+            border-radius: .1875rem;
+}
+
+.card-img-actions {
+  position: relative;
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    text-align: center;
+}
+.card-img {
+    width: 350px;
+    height: 300px;
+}
+.star {
+    color: red;
+}
+
+.bg-cart {
+    background-color: orange;
+    color: #fff;
+}
+
+.bg-cart:hover {
+    color: #fff;
+}
+
+.bg-buy {
+    background-color: green;
+    color: #fff;
+    padding-right: 29px;
+}
+
+.bg-buy:hover {
+    color: #fff;
+}
+
+a {
+
+    text-decoration: none !important;
+}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar-light bg-light navbar navbar-expand-sm ">
+        <a class="navbar-brand" href="#">
+          <img src="D:\Sprint1\Shoes logo.png" alt="shoes Logo" height="30">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="D:\Sprint1\Home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="D:\Sprint1\AboutUs.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="D:\Sprint1\AllProducts.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our products</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="D:\Sprint1\FeaturedProducts.html">Featured Products</a>
+                <div class="dropdown-divider"></div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="D:\Sprint1\ContactUs.html">Contact Us</a>
+            </li>       
+            <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item"><a class="nav-link" href="D:\Sprint1\SignUp.html"> <img src="D:\Sprint1\images\1x\baseline_person_black_24dp.png" style="width: 20px;">Sign Up</a></li>
+          <li class="nav-item"><a class="nav-link" href="D:\Sprint1\Login.html"> <img src="D:\Sprint1\images\baseline_login_black_24dp.png" style="width: 20px;">Login In</a></li>
+            </ul>
+        </div>
+      </nav>
+
+    <h2><b>Our Products</b></h2>
+    <div class="container d-flex justify-content-center mt-50 mb-50">
+        <div class="row">
+            <div class="col-md-4 mt-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-img-actions">
+                            <img src="D:\Sprint1\images\A.jpg_230Wx334H"
+                                class="card-img img-fluid" width="96" height="350" alt="">
+                        </div>
+                    </div>
+                    <div class="card-body bg-light text-center">
+                        <div class="mb-2">
+                            <h6 class="font-weight-semibold mb-2">
+                            <a href="#" class="text-default mb-2" data-abc="true">Wavetronic - Ravlor Synthetic Velcro Boys Sneakers</a>
+                            </h6>
+                            <a href="#" class="text-muted" data-abc="true">Skechers</a>
+                        </div>
+                        <h3 class="mb-0 font-weight-semibold">$250.99</h3>
+                        <div>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                        </div>
+
+                        <div class="text-muted mb-3">34 reviews</div>
+                         <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Add to
+                            cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-img-actions">
+                            <img src="D:\Sprint1\images\B.jpg_230Wx334H"
+                                class="card-img img-fluid" width="96" height="350" alt="">
+                        </div>
+                    </div>
+                    <div class="card-body bg-light text-center">
+                        <div class="mb-2">
+                            <h6 class="font-weight-semibold mb-2">
+                                <a href="#" class="text-default mb-2" data-abc="true">Microspec Plus - Disco Dreami Synthetic Velcro Girls Sneakers</a>
+                            </h6>
+                            <a href="#" class="text-muted" data-abc="true">Skechers</a>
+                        </div>
+                       <h3 class="mb-0 font-weight-semibold">$350.99</h3>
+                       <div>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                        </div>
+                        <div class="text-muted mb-3">34 reviews</div>
+                        <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Add to
+                            cart</button>
+                    </div>
+                </div>
+            </div>
+           <div class="col-md-4 mt-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-img-actions">
+                            <img src="D:\Sprint1\images\C.jpg_230Wx334H"
+                                class="card-img img-fluid" width="96" height="350" alt="">
+                        </div>
+                    </div>
+                    <div class="card-body bg-light text-center">
+                        <div class="mb-2">
+                            <h6 class="font-weight-semibold mb-2">
+                            <a href="#" class="text-default mb-2" data-abc="true">Mesh slipon boys slipon-pink</a>
+                            </h6>
+                            <a href="#" class="text-muted" data-abc="true">Skechers</a>
+                        </div>
+                        <h3 class="mb-0 font-weight-semibold">$200.99</h3>
+                        <div>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                        </div>
+                        <div class="text-muted mb-3">34 reviews</div>
+                        <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Add to
+                            cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-img-actions">
+                            <img src="D:\Sprint1\images\D.jpg_230Wx334H"
+                                class="card-img img-fluid" width="96" height="350" alt="">
+                        </div>
+                    </div>
+                    <div class="card-body bg-light text-center">
+                        <div class="mb-2">
+                            <h6 class="font-weight-semibold mb-2">
+                                <a href="#" class="text-default mb-2" data-abc="true">Mesh Velcro Boys Casual Shoe
+                                </a>
+                            </h6>
+                            <a href="#" class="text-muted" data-abc="true">Skechers</a>
+                        </div>
+                        <h3 class="mb-0 font-weight-semibold">$340.99</h3>
+                       <div>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                        </div>
+                        <div class="text-muted mb-3">34 reviews</div>
+                        <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Add to
+                            cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-img-actions">
+                            <img src="D:\Sprint1\images\H.jpg_230Wx334H"
+                                class="card-img img-fluid" width="96" height="350" alt="">
+                        </div>
+                    </div>
+                    <div class="card-body bg-light text-center">
+                        <div class="mb-2">
+                            <h6 class="font-weight-semibold mb-2">
+                            <a href="#" class="text-default mb-2" data-abc="true">Girls Mesh Sports Shoes</a>
+                            </h6>
+                            <a href="#" class="text-muted" data-abc="true">Skechers</a>
+                        </div>
+                        <h3 class="mb-0 font-weight-semibold">$255.99</h3>
+                       <div>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                        </div>
+                        <div class="text-muted mb-3">34 reviews</div>
+                        <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Add to
+                            cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-img-actions">
+                            <img src="D:\Sprint1\images\I.jpg_230Wx334H"
+                                class="card-img img-fluid" width="96" height="350" alt="">
+                        </div>
+                    </div>
+                    <div class="card-body bg-light text-center">
+                        <div class="mb-2">
+                            <h6 class="font-weight-semibold mb-2">
+                                <a href="#" class="text-default mb-2" data-abc="true">Fabric Slipon Girls Slipon 
+                                  </a>
+                            </h6>
+                            <a href="#" class="text-muted" data-abc="true">Skechers</a>
+                        </div>
+                        <h3 class="mb-0 font-weight-semibold">$445.99</h3>
+                       <div>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                        </div>
+                        <div class="text-muted mb-3">34 reviews</div>
+                        <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Add to
+                            cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-img-actions">
+                            <img src="D:\Sprint1\images\J.jpg_230Wx334H"
+                                class="card-img img-fluid" width="96" height="350" alt="">
+                        </div>
+                    </div>
+                    <div class="card-body bg-light text-center">
+                        <div class="mb-2">
+                            <h6 class="font-weight-semibold mb-2">
+                                <a href="#" class="text-default mb-2" data-abc="true">Mesh Velcro Boys Casual Shoes
+                                </a>
+                            </h6>
+                            <a href="#" class="text-muted" data-abc="true">Skechers</a>
+                        </div>
+                        <h3 class="mb-0 font-weight-semibold">$220.99</h3>
+                       <div>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                        </div>
+                        <div class="text-muted mb-3">34 reviews</div>
+                        <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Add to
+                            cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-img-actions">
+                            <img src="D:\Sprint1\images\L.jpg_230Wx334H"
+                                class="card-img img-fluid" width="96" height="350" alt="">
+                        </div>
+                    </div>
+                    <div class="card-body bg-light text-center">
+                        <div class="mb-2">
+                            <h6 class="font-weight-semibold mb-2">
+                                <a href="#" class="text-default mb-2" data-abc="true">Girls Mesh Sports Shoes
+                                </a>
+                            </h6>
+                            <a href="#" class="text-muted" data-abc="true">Skechers</a>
+                        </div>
+                        <h3 class="mb-0 font-weight-semibold">$240.99</h3>
+                       <div>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                        </div>
+                        <div class="text-muted mb-3">34 reviews</div>
+                        <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Add to
+                            cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-img-actions">
+                            <img src="D:\Sprint1\images\M.jpg_230Wx334H"
+                                class="card-img img-fluid" width="96" height="350" alt="">
+                        </div>
+                    </div>
+                    <div class="card-body bg-light text-center">
+                        <div class="mb-2">
+                            <h6 class="font-weight-semibold mb-2">
+                                <a href="#" class="text-default mb-2" data-abc="true">Girls Mesh Sports Shoes
+                                  </a>
+                            </h6>
+                            <a href="#" class="text-muted" data-abc="true">Skechers</a>
+                        </div>
+                        <h3 class="mb-0 font-weight-semibold">$333.99</h3>
+                       <div>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                        </div>
+                        <div class="text-muted mb-3">34 reviews</div>
+                        <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Add to
+                            cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-img-actions">
+                            <img src="D:\Sprint1\images\N.jpg_230Wx334H"
+                                class="card-img img-fluid" width="96" height="350" alt="">
+                        </div>
+                    </div>
+                    <div class="card-body bg-light text-center">
+                        <div class="mb-2">
+                            <h6 class="font-weight-semibold mb-2">
+                                <a href="#" class="text-default mb-2" data-abc="true">Synthetic Lace Up Girls Sneakers
+                                </a>
+                            </h6>
+                            <a href="#" class="text-muted" data-abc="true">Skechers</a>
+                        </div>
+                        <h3 class="mb-0 font-weight-semibold">$195.99</h3>
+                       <div>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                        </div>
+                        <div class="text-muted mb-3">34 reviews</div>
+                        <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Add to
+                            cart</button>
+                    </div>
+                </div>
+            </div>
+           <div class="col-md-4 mt-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-img-actions">
+
+                            <img src="D:\Sprint1\images\E.jpg_230Wx334H"
+                                class="card-img img-fluid" width="96" height="350" alt="">
+                        </div>
+                    </div>
+                    <div class="card-body bg-light text-center">
+                        <div class="mb-2">
+                            <h6 class="font-weight-semibold mb-2">
+                                <a href="#" class="text-default mb-2" data-abc="true">Softride Rift Pop JR Mesh Slipon Kids Unisex Sneakers
+                                </a>
+                            </h6>
+
+                            <a href="#" class="text-muted" data-abc="true">Skechers</a>
+                        </div>
+
+                        <h3 class="mb-0 font-weight-semibold">$545.99</h3>
+                        <div>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                        </div>
+                       <div class="text-muted mb-3">34 reviews</div>
+
+                        <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Add to
+                            cart</button>
+                   </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-img-actions">
+                            <img src="D:\Sprint1\images\F.jpg_230Wx334H"
+                                class="card-img img-fluid" width="96" height="350" alt="">
+                        </div>
+                    </div>
+
+                    <div class="card-body bg-light text-center">
+                        <div class="mb-2">
+                            <h6 class="font-weight-semibold mb-2">
+                                <a href="#" class="text-default mb-2" data-abc="true">Elite Sport Tread Synthetic Velcro Boys Sneakers
+                                </a>
+                            </h6>
+                            <a href="#" class="text-muted" data-abc="true">Skechers</a>
+                        </div>
+                        <h3 class="mb-0 font-weight-semibold">$278.99</h3>
+                        <div>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                            <i class="fa fa-star star"></i>
+                        </div>
+                        <div class="text-muted mb-3">34 reviews</div>
+                        <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Add to
+                            cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
